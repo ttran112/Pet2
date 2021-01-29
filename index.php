@@ -15,9 +15,9 @@ $f3 -> set('DEBUG',3);
 
 $f3 -> route('GET /', function ()
 {
-    echo '<h1>Pet 2</h1>';
-    //$view = new Template();
-    //echo $view -> render('view/home.html');
+   // echo '<h1>Pet 2</h1>';
+    $view = new Template();
+    echo $view -> render('views/pet-home.html');
 }
 );
 $f3 -> run();
